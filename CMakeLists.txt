@@ -5,10 +5,11 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
-set(INCLUDE "/opt/Qt5.9.9/5.9.9/gcc_64/include/QtMultimedia")
+set(INCLUDE "/opt/Qt5.9.9/5.9.9/gcc_64/include/QtMultimedia") #    根据自己的情况书写路径
 set(CMAKE_PREFIX_PATH "/opt/Qt5.9.9/5.9.9/gcc_64/lib/cmake")
 
-set(LINK_LIB "/opt/Qt5.9.9/5.9.9/gcc_64/lib")
+#可以自己添加ffmpeg库路径和opencv 路径，由于本人环境安装在系统库内所以为写出
+set(LINK_LIB "/opt/Qt5.9.9/5.9.9/gcc_64/lib")   # QT动态库路径
 
 #链接库
 link_directories(${LINK_LIB})
